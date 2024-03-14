@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public CharacterState currentState;//当前玩家的状态
     public string currentAnimation;//获取当前的动画进度
     public float runSpeed = 5;//移动速度
+    public float jumpSpeed = 3;//跳跃速度
+    bool isJump = false;//是否在跳
     public float movement;//获取轴的输入
     private Rigidbody2D rigidBbody;
     private Vector3 rawLocalScale;//原始尺寸
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         Flip();//检测翻转
         Move();//检测移动
+        IsJump();//检测跳跃
 
     }
     
@@ -100,6 +103,32 @@ public class PlayerController : MonoBehaviour
         else
         {
             SetCharacterState(CharacterState.Idle);
+        }
+    }
+
+    public void Jump()
+    {
+        Debug.Log(isJump);
+        if (!isJump) 
+        {
+            //如果没有跳跃，跳跃
+            Vector2 jumpVel = new Vector2(0.0f, jumpSpeed);
+            rigidBbody.velocity = Vector2.up * jumpVel;
+            
+        }
+
+    }
+    public void IsJump()
+    {
+
+        //检测玩家是否在跳跃（y轴是否有移动）
+        if (Mathf.Abs( rigidBbody.velocity.y ) >= 0.001f)
+        {
+            isJump = true;
+        }
+        else
+        {
+            isJump = false;
         }
     }
 }
