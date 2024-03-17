@@ -1,4 +1,4 @@
-using Mono.Cecil;
+//using Mono.Cecil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +24,7 @@ public class GMCommand
         PackageLocalData.Instance.items = new List<PackageLocalItem>();
         for (int i = 1; i < 9; i++)
         {
-            PackageLocalItem packageLocalItem = new()
+            PackageLocalItem packageLocalItem = new PackageLocalItem()
             {
                 uid = Guid.NewGuid().ToString(),
                 id = i,

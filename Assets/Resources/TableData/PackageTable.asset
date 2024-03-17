@@ -19,7 +19,7 @@ MonoBehaviour:
     description: testItem1desc
     imagePath: Images/Items/testItem
     num: 1
-  - id: 0
+  - id: 1
     type: 1
     name: testItem2
     description: testItem2desc
