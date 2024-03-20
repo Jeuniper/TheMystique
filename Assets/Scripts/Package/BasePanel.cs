@@ -6,6 +6,10 @@ public class BasePanel : MonoBehaviour
 {
     protected bool isRemove = false;
     protected new string name;
+    virtual protected void Awake()
+    {
+        
+    }
     public virtual void SetActive(bool active)
     {
         gameObject.SetActive(active);

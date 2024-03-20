@@ -46,7 +46,7 @@ public class PackageLocalData//存取本地物品信息
 }
 
 [System.Serializable]
-public class PackageLocalItem
+public class PackageLocalItem//物品类中的动态数据
 {
     //本地需要的玩家数据（物品数据）：id，数量，是否是新获得的
     public string uid;
