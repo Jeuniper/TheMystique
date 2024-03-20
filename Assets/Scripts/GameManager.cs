@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectsWithTag("Player")[0];
 
         //打开获取背包
-        UIManager.Instance.OpenPanel(UIConst.PackagePanel);
+        //UIManager.Instance.OpenPanel(UIConst.PackagePanel);
     }
     public void OnStartGameHandler(string sceneName)
     {
@@ -56,6 +56,35 @@ public class GameManager : MonoBehaviour
     public List<PackageLocalItem> GetPackageLocalData()
     {
         return PackageLocalData.Instance.LoadPackage();//返回List<PackageLocalItem>
+    }
+    public List<PackageLocalItem> GetPackageSortLocalData()//返回按照id从小到大排序的物品列表
+    {
+        List<PackageLocalItem> SortLocalData = GetPackageLocalData();
+        PackageItemComparer packageItemComparer = new PackageItemComparer();
+        PackageLocalItem temp;
+        //返回List<PackageLocalItem>,按照id排序
+        int ListLength = SortLocalData.Count;
+        for (int i = 0; i <= ListLength; i++)
+        {
+            for (int j = 1; j < ListLength; j++)
+            {
+                if (SortLocalData[j].id > SortLocalData[j - 1].id)//前者>后者
+                {
+                    //交换
+                    temp = SortLocalData[j];
+                    SortLocalData[j] = SortLocalData[j - 1];
+                    SortLocalData[j - 1] = temp;
+                }
+            }
+
+        }
+        ////删除id相同的，id相同的只保留一个（堆叠），并把数量叠上去
+        //for (int i = 0; i < ListLength; i++)
+        //{
+        //    Debug.Log(SortLocalData[i].id);
+        //    Debug.Log(GetPackageLocalData()[i].uid);
+        //}
+        return SortLocalData;
     }
 
     //根据uid获取物品，要找的是PackageLocalData里的PackageLocalItem

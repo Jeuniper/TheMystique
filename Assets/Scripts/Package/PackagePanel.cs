@@ -10,10 +10,12 @@ public class PackagePanel : BasePanel
     private Transform UIMenuCloths;
     private Transform CloseBtn;
     private Transform Center;
-    private Transform ScrollView;
+    private Transform UIScrollView;
     private Transform UIDetailPanel;
     private Transform UIRightBtn;//
     private Transform UIDetailBtn;
+
+    public GameObject PackageUIItemPrefab;//每个物品cell的预制件
 
     override protected void Awake()
     {
@@ -21,7 +23,37 @@ public class PackagePanel : BasePanel
         InitUI();
         InitClick();
     }
-    
+
+    private void Start()
+    {
+        //整个物品滚动容器部分
+        RefreshUI();
+    }
+
+
+    private void RefreshUI()//刷新背包UI
+    {
+        RefreshScrollView();
+    }
+    private void RefreshScrollView()//刷新滚动容器
+    {
+        //把所有容器内容都删除
+        RectTransform scrollContent = UIScrollView.GetComponent<ScrollRect>().content;
+        for (int i = 0; i < scrollContent.childCount; i++)
+        {
+            Destroy(scrollContent.GetChild(i).gameObject);
+        }
+        //获取背包数据并整体显示
+        foreach (PackageLocalItem localData in GameManager.Instance.GetPackageSortLocalData())
+        {
+            Transform PackageUIItem = Instantiate(PackageUIItemPrefab.transform, scrollContent) as Transform;
+            UIPackageItem uIPackageItem = PackageUIItem.GetComponent<UIPackageItem>();
+            uIPackageItem.Refresh(localData, this);
+
+        }
+    }
+
+
     private void InitUI()//注册UI组件
     {
         UIMenu = transform.Find("Top/Menu");
@@ -29,7 +61,7 @@ public class PackagePanel : BasePanel
         UIMenuCloths = transform.Find("Top/Menu/Cloths");
         CloseBtn = transform.Find("Top/backButton");
         Center = transform.Find("Center");
-        ScrollView = transform.Find("Center/ScrollView");
+        UIScrollView = transform.Find("Center/ScrollView");
         UIDetailPanel = transform.Find("Center/ItemDetail");
     }
 

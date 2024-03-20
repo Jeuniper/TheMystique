@@ -51,7 +51,7 @@ public class PackageLocalItem//物品类中的动态数据
     //本地需要的玩家数据（物品数据）：id，数量，是否是新获得的
     public string uid;
     public int id;
-    public int num;
+    public int num=0;
     public bool isNew;
     public override string ToString()
     {
