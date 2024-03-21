@@ -1,0 +1,769 @@
+
+103037.png
+size: 1969,221
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+103037_mila_C_L_legD
+  rotate: false
+  xy: 1481, 138
+  size: 41, 81
+  orig: 41, 81
+  offset: 0, 0
+  index: -1
+103037_mila_C_Lxiezi_0
+  rotate: false
+  xy: 1763, 3
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+103037_mila_C_RlegD
+  rotate: false
+  xy: 1265, 5
+  size: 39, 89
+  orig: 39, 89
+  offset: 0, 0
+  index: -1
+103037_mila_C_body0
+  rotate: false
+  xy: 1443, 19
+  size: 64, 85
+  orig: 64, 85
+  offset: 0, 0
+  index: -1
+103037_mila_C_body1
+  rotate: false
+  xy: 591, 2
+  size: 89, 62
+  orig: 89, 62
+  offset: 0, 0
+  index: -1
+103037_mila_C_face
+  rotate: false
+  xy: 1060, 95
+  size: 106, 124
+  orig: 106, 124
+  offset: 0, 0
+  index: -1
+103037_mila_C_hand_02
+  rotate: false
+  xy: 1599, 106
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+103037_mila_C_huangguan
+  rotate: true
+  xy: 682, 2
+  size: 62, 49
+  orig: 62, 49
+  offset: 0, 0
+  index: -1
+103037_mila_C_neck
+  rotate: false
+  xy: 1841, 55
+  size: 38, 51
+  orig: 38, 51
+  offset: 0, 0
+  index: -1
+103037_mila_C_qunzi_0
+  rotate: true
+  xy: 792, 79
+  size: 140, 106
+  orig: 140, 106
+  offset: 0, 0
+  index: -1
+103037_mila_Chair_00
+  rotate: false
+  xy: 718, 72
+  size: 31, 147
+  orig: 31, 147
+  offset: 0, 0
+  index: -1
+103037_mila_Chand_U2
+  rotate: true
+  xy: 1931, 181
+  size: 38, 36
+  orig: 38, 36
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair1
+  rotate: false
+  xy: 678, 72
+  size: 38, 147
+  orig: 38, 147
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair2
+  rotate: true
+  xy: 346, 3
+  size: 57, 148
+  orig: 57, 148
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair3
+  rotate: false
+  xy: 123, 54
+  size: 53, 165
+  orig: 53, 165
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair4
+  rotate: false
+  xy: 2, 54
+  size: 62, 165
+  orig: 62, 165
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair5
+  rotate: false
+  xy: 236, 59
+  size: 80, 160
+  orig: 80, 160
+  offset: 0, 0
+  index: -1
+103037_mila_H_hair6
+  rotate: false
+  xy: 178, 58
+  size: 56, 161
+  orig: 56, 161
+  offset: 0, 0
+  index: -1
+103037_mila_L_ClegD
+  rotate: false
+  xy: 1399, 14
+  size: 42, 86
+  orig: 42, 86
+  offset: 0, 0
+  index: -1
+103037_mila_L_ClegD_f_light
+  rotate: false
+  xy: 1437, 133
+  size: 42, 86
+  orig: 42, 86
+  offset: 0, 0
+  index: -1
+103037_mila_L_ClegU_0png
+  rotate: false
+  xy: 832, 5
+  size: 42, 72
+  orig: 42, 72
+  offset: 0, 0
+  index: -1
+103037_mila_L_ClegU_0png_f_light
+  rotate: false
+  xy: 876, 5
+  size: 42, 72
+  orig: 42, 72
+  offset: 0, 0
+  index: -1
+103037_mila_L_Cxiezi_00
+  rotate: true
+  xy: 1886, 143
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+103037_mila_L_Cxiezi_00_f_light
+  rotate: true
+  xy: 1886, 101
+  size: 40, 41
+  orig: 40, 41
+  offset: 0, 0
+  index: -1
+103037_mila_L_armD
+  rotate: true
+  xy: 1797, 108
+  size: 54, 43
+  orig: 54, 43
+  offset: 0, 0
+  index: -1
+103037_mila_L_armD_f_light
+  rotate: true
+  xy: 1811, 165
+  size: 54, 43
+  orig: 54, 43
+  offset: 0, 0
+  index: -1
+103037_mila_L_armO
+  rotate: false
+  xy: 1886, 30
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+103037_mila_L_armU
+  rotate: false
+  xy: 1693, 44
+  size: 47, 61
+  orig: 47, 61
+  offset: 0, 0
+  index: -1
+103037_mila_L_armUW
+  rotate: false
+  xy: 1801, 53
+  size: 38, 53
+  orig: 38, 53
+  offset: 0, 0
+  index: -1
+103037_mila_L_armUW2
+  rotate: false
+  xy: 74, 2
+  size: 38, 50
+  orig: 38, 50
+  offset: 0, 0
+  index: -1
+103037_mila_L_armUW2_f_light
+  rotate: false
+  xy: 114, 2
+  size: 38, 50
+  orig: 38, 50
+  offset: 0, 0
+  index: -1
+103037_mila_L_armU_f_light
+  rotate: false
+  xy: 1661, 158
+  size: 47, 61
+  orig: 47, 61
+  offset: 0, 0
+  index: -1
+103037_mila_L_eyeball
+  rotate: false
+  xy: 1407, 104
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+103037_mila_L_jiemao4
+  rotate: false
+  xy: 1036, 2
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+103037_mila_L_jiemao_0
+  rotate: false
+  xy: 1443, 3
+  size: 30, 14
+  orig: 30, 14
+  offset: 0, 0
+  index: -1
+103037_mila_L_jiemao_1
+  rotate: false
+  xy: 1018, 79
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+103037_mila_L_jiemao_2
+  rotate: false
+  xy: 1005, 79
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+103037_mila_L_jiemao_3
+  rotate: false
+  xy: 1488, 5
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+103037_mila_L_legO_D
+  rotate: false
+  xy: 1929, 104
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+103037_mila_L_legO_U
+  rotate: false
+  xy: 1881, 59
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+103037_mila_L_meimao0
+  rotate: false
+  xy: 995, 2
+  size: 21, 7
+  orig: 21, 7
+  offset: 0, 0
+  index: -1
+103037_mila_L_xiezi_00
+  rotate: false
+  xy: 1929, 138
+  size: 32, 41
+  orig: 32, 41
+  offset: 0, 0
+  index: -1
+103037_mila_L_xiuziDW
+  rotate: true
+  xy: 1710, 159
+  size: 60, 57
+  orig: 60, 57
+  offset: 0, 0
+  index: -1
+103037_mila_L_xiuzi_L
+  rotate: true
+  xy: 1632, 107
+  size: 32, 65
+  orig: 32, 65
+  offset: 0, 0
+  index: -1
+103037_mila_R_C_leg_U
+  rotate: false
+  xy: 788, 2
+  size: 42, 70
+  orig: 42, 70
+  offset: 0, 0
+  index: -1
+103037_mila_R_C_leg_U_f_light
+  rotate: false
+  xy: 951, 7
+  size: 42, 70
+  orig: 42, 70
+  offset: 0, 0
+  index: -1
+103037_mila_R_ClegD_0
+  rotate: true
+  xy: 154, 3
+  size: 49, 94
+  orig: 49, 94
+  offset: 0, 0
+  index: -1
+103037_mila_R_ClegD_0_f_light
+  rotate: false
+  xy: 1386, 125
+  size: 49, 94
+  orig: 49, 94
+  offset: 0, 0
+  index: -1
+103037_mila_R_armO
+  rotate: false
+  xy: 1915, 30
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+103037_mila_R_armUw
+  rotate: true
+  xy: 1706, 2
+  size: 40, 55
+  orig: 40, 55
+  offset: 0, 0
+  index: -1
+103037_mila_R_arm_D
+  rotate: true
+  xy: 1699, 108
+  size: 48, 54
+  orig: 48, 54
+  offset: 0, 0
+  index: -1
+103037_mila_R_arm_U
+  rotate: false
+  xy: 1643, 43
+  size: 48, 62
+  orig: 48, 62
+  offset: 0, 0
+  index: -1
+103037_mila_R_eyeball
+  rotate: false
+  xy: 1386, 102
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+103037_mila_R_jiemao1
+  rotate: false
+  xy: 1088, 2
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+103037_mila_R_jiemao2
+  rotate: false
+  xy: 1076, 2
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+103037_mila_R_jiemao3
+  rotate: true
+  xy: 1060, 2
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+103037_mila_R_jiemao5
+  rotate: false
+  xy: 1048, 2
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+103037_mila_R_jiemao_0
+  rotate: false
+  xy: 1064, 81
+  size: 29, 12
+  orig: 29, 12
+  offset: 0, 0
+  index: -1
+103037_mila_R_legD_0
+  rotate: false
+  xy: 1177, 3
+  size: 39, 91
+  orig: 39, 91
+  offset: 0, 0
+  index: -1
+103037_mila_R_legO_D
+  rotate: true
+  xy: 1565, 106
+  size: 31, 32
+  orig: 31, 32
+  offset: 0, 0
+  index: -1
+103037_mila_R_legO_U
+  rotate: false
+  xy: 1923, 59
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+103037_mila_R_leg_U
+  rotate: false
+  xy: 1357, 7
+  size: 40, 88
+  orig: 40, 88
+  offset: 0, 0
+  index: -1
+103037_mila_R_meimao1
+  rotate: false
+  xy: 1037, 81
+  size: 25, 6
+  orig: 25, 6
+  offset: 0, 0
+  index: -1
+103037_mila_R_xiuzL
+  rotate: false
+  xy: 1651, 2
+  size: 53, 39
+  orig: 53, 39
+  offset: 0, 0
+  index: -1
+103037_mila_R_xiuziDW
+  rotate: true
+  xy: 1742, 46
+  size: 60, 57
+  orig: 60, 57
+  offset: 0, 0
+  index: -1
+103037_mila_body00
+  rotate: false
+  xy: 1095, 13
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+103037_mila_body00_f_light
+  rotate: false
+  xy: 1524, 139
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+103037_mila_body_01
+  rotate: true
+  xy: 1551, 26
+  size: 78, 53
+  orig: 78, 53
+  offset: 0, 0
+  index: -1
+103037_mila_body_01_f_light
+  rotate: true
+  xy: 1606, 141
+  size: 78, 53
+  orig: 78, 53
+  offset: 0, 0
+  index: -1
+103037_mila_body_02
+  rotate: true
+  xy: 250, 2
+  size: 55, 46
+  orig: 55, 46
+  offset: 0, 0
+  index: -1
+103037_mila_body_02_f_light
+  rotate: true
+  xy: 298, 2
+  size: 55, 46
+  orig: 55, 46
+  offset: 0, 0
+  index: -1
+103037_mila_earhuan0
+  rotate: true
+  xy: 1427, 106
+  size: 17, 35
+  orig: 17, 35
+  offset: 0, 0
+  index: -1
+103037_mila_face_0
+  rotate: false
+  xy: 1168, 96
+  size: 110, 123
+  orig: 110, 123
+  offset: 0, 0
+  index: -1
+103037_mila_hair_1
+  rotate: false
+  xy: 1005, 89
+  size: 53, 130
+  orig: 53, 130
+  offset: 0, 0
+  index: -1
+103037_mila_hair_10
+  rotate: false
+  xy: 631, 67
+  size: 45, 152
+  orig: 45, 152
+  offset: 0, 0
+  index: -1
+103037_mila_hair_11
+  rotate: false
+  xy: 416, 62
+  size: 84, 157
+  orig: 84, 157
+  offset: 0, 0
+  index: -1
+103037_mila_hair_2
+  rotate: false
+  xy: 751, 74
+  size: 39, 145
+  orig: 39, 145
+  offset: 0, 0
+  index: -1
+103037_mila_hair_3
+  rotate: false
+  xy: 920, 5
+  size: 29, 72
+  orig: 29, 72
+  offset: 0, 0
+  index: -1
+103037_mila_hair_4
+  rotate: false
+  xy: 1306, 2
+  size: 49, 93
+  orig: 49, 93
+  offset: 0, 0
+  index: -1
+103037_mila_hair_5
+  rotate: true
+  xy: 2, 2
+  size: 50, 70
+  orig: 50, 70
+  offset: 0, 0
+  index: -1
+103037_mila_hair_6
+  rotate: false
+  xy: 1509, 23
+  size: 40, 81
+  orig: 40, 81
+  offset: 0, 0
+  index: -1
+103037_mila_hair_7
+  rotate: false
+  xy: 502, 63
+  size: 64, 156
+  orig: 64, 156
+  offset: 0, 0
+  index: -1
+103037_mila_hair_8
+  rotate: false
+  xy: 1218, 4
+  size: 45, 90
+  orig: 45, 90
+  offset: 0, 0
+  index: -1
+103037_mila_hair_9
+  rotate: false
+  xy: 568, 66
+  size: 61, 153
+  orig: 61, 153
+  offset: 0, 0
+  index: -1
+103037_mila_hand_003
+  rotate: true
+  xy: 1755, 109
+  size: 48, 40
+  orig: 48, 40
+  offset: 0, 0
+  index: -1
+103037_mila_hand_004
+  rotate: true
+  xy: 1846, 8
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+103037_mila_hand_006
+  rotate: false
+  xy: 1886, 185
+  size: 43, 34
+  orig: 43, 34
+  offset: 0, 0
+  index: -1
+103037_mila_hand_007
+  rotate: true
+  xy: 1769, 164
+  size: 55, 40
+  orig: 55, 40
+  offset: 0, 0
+  index: -1
+103037_mila_hand_009
+  rotate: true
+  xy: 1606, 39
+  size: 65, 35
+  orig: 65, 35
+  offset: 0, 0
+  index: -1
+103037_mila_hand_010
+  rotate: false
+  xy: 1805, 6
+  size: 39, 45
+  orig: 39, 45
+  offset: 0, 0
+  index: -1
+103037_mila_hand_01_L
+  rotate: true
+  xy: 1481, 106
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+103037_mila_hand_4
+  rotate: true
+  xy: 1842, 118
+  size: 45, 37
+  orig: 45, 37
+  offset: 0, 0
+  index: -1
+103037_mila_hand_R_00
+  rotate: false
+  xy: 1606, 2
+  size: 43, 35
+  orig: 43, 35
+  offset: 0, 0
+  index: -1
+103037_mila_huangguan
+  rotate: false
+  xy: 496, 3
+  size: 93, 57
+  orig: 93, 57
+  offset: 0, 0
+  index: -1
+103037_mila_mouth_0
+  rotate: false
+  xy: 693, 66
+  size: 8, 4
+  orig: 8, 4
+  offset: 0, 0
+  index: -1
+103037_mila_mouth_02_gethit
+  rotate: false
+  xy: 1399, 2
+  size: 20, 10
+  orig: 20, 10
+  offset: 0, 0
+  index: -1
+103037_mila_mouth_03
+  rotate: false
+  xy: 678, 66
+  size: 13, 4
+  orig: 13, 4
+  offset: 0, 0
+  index: -1
+103037_mila_mouth_04
+  rotate: false
+  xy: 1028, 79
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1
+103037_mila_neck_0
+  rotate: false
+  xy: 1856, 174
+  size: 28, 45
+  orig: 28, 45
+  offset: 0, 0
+  index: -1
+103037_mila_qunzi_00
+  rotate: true
+  xy: 318, 62
+  size: 157, 96
+  orig: 157, 96
+  offset: 0, 0
+  index: -1
+103037_mila_tp
+  rotate: true
+  xy: 1280, 97
+  size: 122, 104
+  orig: 122, 104
+  offset: 0, 0
+  index: -1
+103037_mila_yaodai_01
+  rotate: false
+  xy: 900, 79
+  size: 103, 140
+  orig: 103, 140
+  offset: 0, 0
+  index: -1
+103037_mila_yaodai_02
+  rotate: false
+  xy: 66, 54
+  size: 55, 165
+  orig: 55, 165
+  offset: 0, 0
+  index: -1
+103037_mila_yaojia0
+  rotate: false
+  xy: 1050, 13
+  size: 43, 66
+  orig: 43, 66
+  offset: 0, 0
+  index: -1
+guang1
+  rotate: true
+  xy: 1523, 106
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+xiuzi_L_xiuzi_00x
+  rotate: false
+  xy: 733, 4
+  size: 53, 66
+  orig: 53, 66
+  offset: 0, 0
+  index: -1
+xiuzi_L_xiuzi_00x_f_light
+  rotate: false
+  xy: 995, 11
+  size: 53, 66
+  orig: 53, 66
+  offset: 0, 0
+  index: -1
+zui_3
+  rotate: false
+  xy: 1018, 2
+  size: 16, 7
+  orig: 16, 7
+  offset: 0, 0
+  index: -1
+zui_5
+  rotate: true
+  xy: 1475, 3
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
