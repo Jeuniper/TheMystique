@@ -823,6 +823,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3257658756048048397, guid: 58f095554ca1e04489992a0c730b2c22, type: 3}
   m_PrefabInstance: {fileID: 3257658754237115061}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &722517766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3257658756048048393, guid: 58f095554ca1e04489992a0c730b2c22, type: 3}
+  m_PrefabInstance: {fileID: 3257658754237115061}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722517749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06de5c62b97203048b131668f4657e6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &858746173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1286,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2384692305673135443, guid: b9390108cf82d8444bcfd043c4be856c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 722517766}
+    - target: {fileID: 2384692305673135443, guid: b9390108cf82d8444bcfd043c4be856c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9390108cf82d8444bcfd043c4be856c, type: 3}
 --- !u!1 &975879595
@@ -1371,6 +1390,18 @@ PrefabInstance:
     - target: {fileID: 336295546758400349, guid: fbcd3cd6d397e164baf8031b8fbecbc2, type: 3}
       propertyPath: m_Depth
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336295547154037296, guid: fbcd3cd6d397e164baf8031b8fbecbc2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 722517766}
+    - target: {fileID: 336295547154037296, guid: fbcd3cd6d397e164baf8031b8fbecbc2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 336295547154037296, guid: fbcd3cd6d397e164baf8031b8fbecbc2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 336295548104235378, guid: fbcd3cd6d397e164baf8031b8fbecbc2, type: 3}
       propertyPath: m_Pivot.x
