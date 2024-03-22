@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private bool canDoubleJump;
     private bool IsAttack;
+    public bool isJumpOrFall;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +34,9 @@ public class PlayerController : MonoBehaviour
         CheckGrounded();
         Flip();
         Run();
-        Jump();
+        //Jump();
         Fall();
-        //Attack();
-  
-
-
+        myAni.SetBool("IsJump", myRigidBody.velocity.y > 0.0f);//ÅÐ¶ÏÊÇ·ñÔÚÌøÔ¾
     }
     void CheckGrounded()
     {
@@ -95,10 +93,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void Jump()
+    public void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
             if (isGrounded)
             {
                 Vector2 jumpVel = new Vector2(0.0f, jumpSpeed);
@@ -115,13 +111,8 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-
-                
-
-            
-        }
-        bool isJump = myRigidBody.velocity.y > 0.0f;
-        myAni.SetBool("IsJump", isJump);
+        bool isJump = myRigidBody.velocity.y > 0.1f;
+        
     }
     void Fall()
     {
