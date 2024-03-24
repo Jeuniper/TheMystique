@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+//using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void Interaction()//当玩家准备与场景中的物体交互时使用
     {
-        player.GetComponent<PlayerCountroller>().Attack();//这里拼错了，记得改
+        player.GetComponent<PlayerController>().Attack();//这里拼错了，记得改
     }
 
     public PackageTables GetPackageTables()//获取数据表

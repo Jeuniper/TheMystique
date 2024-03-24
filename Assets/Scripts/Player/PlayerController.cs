@@ -131,4 +131,9 @@ public class PlayerController : MonoBehaviour
             isJump = false;
         }
     }
+
+    public void Attack()
+    {
+        Debug.Log(">>>>>Attack");
+    }
 }
