@@ -67,3 +67,45 @@ MonoBehaviour:
     description: testItem3desc
     imagePath: Images/Items/testItem2
     num: 1
+  - id: 2
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 3
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 4
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 5
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 6
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 7
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1
+  - id: 8
+    type: 1
+    name: testItem2
+    description: testItem2desc
+    imagePath: Images/Items/testItem2
+    num: 1

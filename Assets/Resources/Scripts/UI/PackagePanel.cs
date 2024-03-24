@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PackagePanel : BasePanel
 {
     private Transform UIMenu;
@@ -44,8 +45,10 @@ public class PackagePanel : BasePanel
             Destroy(scrollContent.GetChild(i).gameObject);
         }
         //获取背包数据并整体显示
-        foreach (PackageLocalItem localData in GameManager.Instance.GetPackageSortLocalData())
+        //Debug.Log(GameManager.Instance.GetPackageTables());
+        foreach (PackageLocalItem localData in PackageLocalData.Instance.LoadPackage())//GameManager.Instance.GetPackageSortLocalData()
         {
+            
             Transform PackageUIItem = Instantiate(PackageUIItemPrefab.transform, scrollContent) as Transform;
             UIPackageItem uIPackageItem = PackageUIItem.GetComponent<UIPackageItem>();
             uIPackageItem.Refresh(localData, this);
