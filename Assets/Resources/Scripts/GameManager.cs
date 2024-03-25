@@ -79,12 +79,7 @@ public class GameManager : MonoBehaviour
             }
 
         }
-        ////删除id相同的，id相同的只保留一个（堆叠），并把数量叠上去
-        //for (int i = 0; i < ListLength; i++)
-        //{
-        //    Debug.Log(SortLocalData[i].id);
-        //    Debug.Log(GetPackageLocalData()[i].uid);
-        //}
+
         return SortLocalData;
     }
 
