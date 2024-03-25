@@ -193,9 +193,10 @@ namespace NodeCanvas.Framework
                 return originalGraph;
             }
 
+            Graph instance = null;
 
             //if it's not a strored instance create, store and return a new instance.
-            if ( !instances.TryGetValue(originalGraph, out Graph instance) ) {
+            if ( !instances.TryGetValue(originalGraph, out instance) ) {
                 instance = Graph.Clone<Graph>(originalGraph, null);
                 instances[originalGraph] = instance;
             }
@@ -215,7 +216,9 @@ namespace NodeCanvas.Framework
             graph = GetInstance(graph);
             if ( graph != null ) {
                 graph.StartGraph(this, blackboard, updateMode, callback);
-                onOwnerBehaviourStateChange?.Invoke(this);
+                if ( onOwnerBehaviourStateChange != null ) {
+                    onOwnerBehaviourStateChange(this);
+                }
             }
         }
 
@@ -223,7 +226,9 @@ namespace NodeCanvas.Framework
         public void PauseBehaviour() {
             if ( graph != null ) {
                 graph.Pause();
-                onOwnerBehaviourStateChange?.Invoke(this);
+                if ( onOwnerBehaviourStateChange != null ) {
+                    onOwnerBehaviourStateChange(this);
+                }
             }
         }
 
@@ -231,13 +236,15 @@ namespace NodeCanvas.Framework
         public void StopBehaviour(bool success = true) {
             if ( graph != null ) {
                 graph.Stop(success);
-                onOwnerBehaviourStateChange?.Invoke(this);
+                if ( onOwnerBehaviourStateChange != null ) {
+                    onOwnerBehaviourStateChange(this);
+                }
             }
         }
 
         ///<summary>Manually update the assigned graph</summary>
         public void UpdateBehaviour() {
-            graph?.UpdateGraph();
+            if ( graph != null ) { graph.UpdateGraph(); }
         }
 
         ///<summary>The same as calling Stop, Start Behaviour</summary>
@@ -249,18 +256,18 @@ namespace NodeCanvas.Framework
         ///----------------------------------------------------------------------------------------------
 
         ///<summary>Send an event to the graph. Note that this overload has no sender argument thus sender will be null.</summary>
-        public void SendEvent(string eventName) { graph?.SendEvent(eventName, null, null); }
+        public void SendEvent(string eventName) { if ( graph != null ) { graph.SendEvent(eventName, null, null); } }
         ///<summary>Send an event to the graph</summary>
-        public void SendEvent(string eventName, object value, object sender) { graph?.SendEvent(eventName, value, sender); }
+        public void SendEvent(string eventName, object value, object sender) { if ( graph != null ) { graph.SendEvent(eventName, value, sender); } }
         ///<summary>Send an event to the graph</summary>
-        public void SendEvent<T>(string eventName, T eventValue, object sender) { graph?.SendEvent(eventName, eventValue, sender); }
+        public void SendEvent<T>(string eventName, T eventValue, object sender) { if ( graph != null ) { graph.SendEvent(eventName, eventValue, sender); } }
 
         ///----------------------------------------------------------------------------------------------
 
         ///<summary>Return an exposed parameter value</summary>
         public T GetExposedParameterValue<T>(string name) {
             var param = exposedParameters.Find(x => x.varRefBoxed != null && x.varRefBoxed.name == name);
-            return param != null ? ( param as ExposedParameter<T> ).value : default;
+            return param != null ? ( param as ExposedParameter<T> ).value : default(T);
         }
 
         ///<summary>Set an exposed parameter value</summary>
@@ -530,12 +537,12 @@ namespace NodeCanvas.Framework
         }
 
         //...
-        virtual protected void OnDrawGizmos() {
+        protected void OnDrawGizmos() {
 
         }
 
         ///<summary>Forward Gizmos callback</summary>
-        virtual protected void OnDrawGizmosSelected() {
+        protected void OnDrawGizmosSelected() {
             if ( Editor.GraphEditorUtility.activeElement != null ) {
                 var rootElement = Editor.GraphEditorUtility.activeElement.graph.GetFlatMetaGraph().FindReferenceElement(Editor.GraphEditorUtility.activeElement);
                 if ( rootElement != null ) {
@@ -591,7 +598,9 @@ namespace NodeCanvas.Framework
             {
                 if ( !ReferenceEquals(_blackboard, value) ) {
                     _blackboard = (Object)value;
-                    graph?.UpdateReferences(this, value);
+                    if ( graph != null ) {
+                        graph.UpdateReferences(this, value);
+                    }
                 }
             }
         }

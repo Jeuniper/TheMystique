@@ -171,7 +171,6 @@ namespace NodeCanvas.Editor
                 onTaskInspectorGUI.Invoke();
 
                 UndoUtility.CheckDirty(task.ownerSystem.contextObject);
-                if ( GUI.changed ) { task.OnValidate(task.ownerSystem); }
             }
         }
 

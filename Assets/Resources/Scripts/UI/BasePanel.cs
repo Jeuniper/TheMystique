@@ -26,6 +26,10 @@ public class BasePanel : MonoBehaviour
         isRemove = true;
         SetActive(false);
         Destroy(gameObject);
+        //foreach (KeyValuePair<string, BasePanel> i in UIManager.Instance.panelDict)
+        //{
+        //    Debug.Log(i.Key);
+        //}
         if (UIManager.Instance.panelDict.ContainsKey(name))
         {
             UIManager.Instance.panelDict.Remove(name);

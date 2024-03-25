@@ -927,7 +927,6 @@ namespace NodeCanvas.Editor
                 var headerRect = new Rect(group.rect.x, group.rect.y, group.rect.width, 25);
                 var autoRect = new Rect(headerRect.xMax - 68, headerRect.y + 1, 68, headerRect.height);
                 var scaleRectBR = new Rect(group.rect.xMax - 20, group.rect.yMax - 20, 20, 20);
-                var notesRect = new Rect(group.rect.x, headerRect.yMax, group.rect.width, group.rect.height - headerRect.height);
 
                 GUI.color = EditorGUIUtility.isProSkin ? new Color(1, 1, 1, 0.4f) : new Color(0.5f, 0.5f, 0.5f, 0.3f);
                 Styles.Draw(group.rect, StyleSheet.editorPanel);
@@ -1006,13 +1005,6 @@ namespace NodeCanvas.Editor
                         UndoUtility.SetDirty(currentGraph);
                         e.Use();
                     }
-
-                    if ( !string.IsNullOrEmpty(group.notes) && notesRect.Contains(e.mousePosition) ) {
-                        if ( e.button == 0 && e.clickCount == 2 ) {
-                            group.editState = CanvasGroup.EditState.EditingComments;
-                            e.Use();
-                        }
-                    }
                 }
 
                 if ( e.type == EventType.MouseDrag ) {
@@ -1038,7 +1030,7 @@ namespace NodeCanvas.Editor
                     }
                 }
 
-                if ( e.rawType == EventType.MouseUp && group.editState != CanvasGroup.EditState.RenamingTitle && group.editState != CanvasGroup.EditState.EditingComments ) {
+                if ( e.rawType == EventType.MouseUp && group.editState != CanvasGroup.EditState.RenamingTitle ) {
                     if ( group.editState == CanvasGroup.EditState.Dragging ) {
                         foreach ( var node in group.GatherContainedNodes(currentGraph) ) {
                             node.TrySortConnectionsByRelativePosition();

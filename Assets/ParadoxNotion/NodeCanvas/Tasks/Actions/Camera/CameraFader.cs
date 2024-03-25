@@ -27,7 +27,7 @@ namespace NodeCanvas.Tasks.Actions
             get
             {
                 if ( _current == null )
-                    _current = FindAnyObjectByType<CameraFader>();
+                    _current = FindObjectOfType<CameraFader>();
                 if ( _current == null )
                     _current = new GameObject("_CameraFader").AddComponent<CameraFader>();
                 return _current;

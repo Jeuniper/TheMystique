@@ -20,7 +20,7 @@ namespace NodeCanvas.Tasks.Actions
 
         protected override void OnExecute() {
 
-            var objects = Object.FindObjectsByType<T>(FindObjectsSortMode.None);
+            var objects = Object.FindObjectsOfType<T>();
             if ( objects != null && objects.Length != 0 ) {
                 saveGameObjects.value = objects.Select(o => o.gameObject).ToList();
                 saveComponents.value = objects.ToList();

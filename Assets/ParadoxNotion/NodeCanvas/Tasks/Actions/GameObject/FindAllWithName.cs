@@ -24,7 +24,7 @@ namespace NodeCanvas.Tasks.Actions
         protected override void OnExecute() {
 
             var gos = new List<GameObject>();
-            foreach ( var go in Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None) ) {
+            foreach ( var go in Object.FindObjectsOfType<GameObject>() ) {
                 if ( go.name == searchName.value )
                     gos.Add(go);
             }

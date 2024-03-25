@@ -17,7 +17,7 @@ namespace NodeCanvas.Tasks.Actions
         public BBParameter<GameObject> saveGameObjectAs;
 
         protected override void OnExecute() {
-            var o = Object.FindAnyObjectByType<T>();
+            var o = Object.FindObjectOfType<T>();
             if ( o != null ) {
                 saveComponentAs.value = o;
                 saveGameObjectAs.value = o.gameObject;

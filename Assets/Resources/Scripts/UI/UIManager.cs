@@ -99,7 +99,7 @@ public class UIManager
         }
 
         panel.ClosePanel();
-        // panelDict.Remove(name);
+        panelDict.Remove(name);
         return true;
     }
 
