@@ -39,73 +39,25 @@ MonoBehaviour:
     num: 1
   - id: 4
     type: 1
+    name: testItem5
+    description: testItem3desc
+    imagePath: Images/Items/3
+    num: 1
+  - id: 5
+    type: 1
     name: testItem6
     description: testItem3desc
     imagePath: Images/Items/3
     num: 1
-  - id: 5
+  - id: 6
     type: 1
     name: testItem7
     description: testItem3desc
-    imagePath: Images/Items/3
+    imagePath: Images/Items/testItem2
     num: 1
-  - id: 6
+  - id: 7
     type: 1
     name: testItem8
     description: testItem3desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 7
-    type: 1
-    name: testItem9
-    description: testItem3desc
     imagePath: Images/Items/3
-    num: 1
-  - id: 8
-    type: 1
-    name: testItem3
-    description: testItem3desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 2
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 3
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 4
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 5
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 6
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 7
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
-    num: 1
-  - id: 8
-    type: 1
-    name: testItem2
-    description: testItem2desc
-    imagePath: Images/Items/testItem2
     num: 1

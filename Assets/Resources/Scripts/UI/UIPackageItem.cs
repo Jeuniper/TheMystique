@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using NodeCanvas.Tasks.Actions;
 
 public class UIPackageItem : MonoBehaviour,IPointerClickHandler
 {
@@ -15,6 +16,8 @@ public class UIPackageItem : MonoBehaviour,IPointerClickHandler
     private Transform UInew;
     private Transform UIBottom;
     private Transform UInum;
+    private Transform UISelectAni;
+    private Transform UIIsSelectedAni;
 
     //获取物品的动态数据
     private PackageLocalItem packageLocalData;
@@ -22,11 +25,30 @@ public class UIPackageItem : MonoBehaviour,IPointerClickHandler
     private packageItems packageTableItem;
     //获取父物体
     private PackagePanel uiParent;
+    //获取动画组件
+
+
+    //定义是否选中
+    public bool isSelected = false;
+
 
     private void Awake()
     {
         InitUI();
         InitClick();
+    }
+
+    private void Update()
+    {
+        if (this.uiParent.chooseUID == this.packageLocalData.uid)
+        {
+            isSelected = true;
+        }
+        else
+        {
+            isSelected = false;
+        }
+        this.UISelected.GetComponent<Animator>().SetBool("isSelected", isSelected);
     }
 
     private void InitUI()//注册UI组件
@@ -38,6 +60,11 @@ public class UIPackageItem : MonoBehaviour,IPointerClickHandler
         UInew = transform.Find("Top/new");
         UInum = transform.Find("Bottom/bg/num");
         UIBottom = transform.Find("Bottom");
+        UISelectAni = transform.Find("SelectAnimation");
+
+        UISelected.gameObject.SetActive(false);
+        UISelectAni.gameObject.SetActive(false);
+        UIDeleted.gameObject.SetActive(false);
     }
 
     private void InitClick()//初始化所有点击事件
@@ -67,20 +94,31 @@ public class UIPackageItem : MonoBehaviour,IPointerClickHandler
         Texture2D t = (Texture2D)Resources.Load(this.packageTableItem.imagePath);
         Sprite temp = Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0, 0));
         UIicon.GetComponent<Image>().sprite = temp;
+        //是否被选中
+        UISelected.gameObject.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log(">>>>>>  点击"+eventData.ToString());
-        //判断重复点击
+        //判断重复点击，重复点击只播动画
         if (this.uiParent.chooseUID == this.packageLocalData.uid)
         {
+            UISelectAni.gameObject.SetActive(true);
+            UISelectAni.GetComponent<Animator>().SetTrigger("Select");
             return;
         }
-        else 
-        {
-            //赋值
-            this.uiParent.chooseUID = this.packageLocalData.uid;
-        }
+
+        //赋值
+        this.uiParent.chooseUID = this.packageLocalData.uid;
+        UISelectAni.gameObject.SetActive(true);
+        UISelectAni.GetComponent<Animator>().SetTrigger("Select");
+        this.UISelected.gameObject.SetActive(true);
+        
+        //刷新其他所有的cell，刷为未选中状态
+
+        
+        
+
     }
 }

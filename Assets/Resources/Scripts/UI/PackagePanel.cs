@@ -26,6 +26,7 @@ public class PackagePanel : BasePanel
         {
             _chooseuid = value;
             RefreshDetail();
+            //RefreshUI();
         }
     }
 
@@ -47,7 +48,7 @@ public class PackagePanel : BasePanel
     {
         RefreshScrollView();
     }
-    private void RefreshScrollView()//刷新滚动容器
+    public void RefreshScrollView()//刷新滚动容器
     {
         //把所有容器内容都删除
         RectTransform scrollContent = UIScrollView.GetComponent<ScrollRect>().content;
