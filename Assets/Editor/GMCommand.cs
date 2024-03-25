@@ -23,7 +23,7 @@ public class GMCommand
     {
         //±£´æÊý¾Ý
         PackageLocalData.Instance.items = new List<PackageLocalItem>();
-        for (int i = 1; i < 9; i++)
+        for (int i = 0; i < 8; i++)
         {
             PackageLocalItem packageLocalItem = new PackageLocalItem()
             {

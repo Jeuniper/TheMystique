@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         {
             for (int j = 1; j < ListLength; j++)
             {
-                if (SortLocalData[j].id > SortLocalData[j - 1].id)//前者>后者
+                if (SortLocalData[j].id < SortLocalData[j - 1].id)//前者<后者
                 {
                     //交换
                     temp = SortLocalData[j];

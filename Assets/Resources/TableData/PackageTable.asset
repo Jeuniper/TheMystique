@@ -33,31 +33,31 @@ MonoBehaviour:
     num: 1
   - id: 3
     type: 1
-    name: testItem3
+    name: testItem4
     description: testItem3desc
     imagePath: Images/Items/3
     num: 1
   - id: 4
     type: 1
-    name: testItem3
+    name: testItem6
     description: testItem3desc
     imagePath: Images/Items/3
     num: 1
   - id: 5
     type: 1
-    name: testItem3
+    name: testItem7
     description: testItem3desc
     imagePath: Images/Items/3
     num: 1
   - id: 6
     type: 1
-    name: testItem3
+    name: testItem8
     description: testItem3desc
     imagePath: Images/Items/testItem2
     num: 1
   - id: 7
     type: 1
-    name: testItem3
+    name: testItem9
     description: testItem3desc
     imagePath: Images/Items/3
     num: 1

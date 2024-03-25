@@ -18,6 +18,17 @@ public class PackagePanel : BasePanel
 
     public GameObject PackageUIItemPrefab;//每个物品cell的预制件
 
+    private string _chooseuid;//记录当前选中的物品的uid
+    public string chooseUID
+    {
+        get { return _chooseuid; }
+        set 
+        {
+            _chooseuid = value;
+            RefreshDetail();
+        }
+    }
+
     override protected void Awake()
     {
         base.Awake();
@@ -56,7 +67,13 @@ public class PackagePanel : BasePanel
         }
     }
 
-
+    private void RefreshDetail()
+    {
+        //拿到数据
+        PackageLocalItem localItem = GameManager.Instance.GetPackageItemByUId(chooseUID);
+        //刷新组件
+        UIDetailPanel.GetComponent<PackageDetail>().Refresh(localItem, this);
+    }
     private void InitUI()//注册UI组件
     {
         UIMenu = transform.Find("Top/Menu");

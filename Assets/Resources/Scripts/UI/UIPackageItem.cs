@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class UIPackageItem : MonoBehaviour
+public class UIPackageItem : MonoBehaviour,IPointerClickHandler
 {
     private Transform UISelected;
     private Transform UIDeleted;
@@ -66,5 +67,20 @@ public class UIPackageItem : MonoBehaviour
         Texture2D t = (Texture2D)Resources.Load(this.packageTableItem.imagePath);
         Sprite temp = Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0, 0));
         UIicon.GetComponent<Image>().sprite = temp;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log(">>>>>>  点击"+eventData.ToString());
+        //判断重复点击
+        if (this.uiParent.chooseUID == this.packageLocalData.uid)
+        {
+            return;
+        }
+        else 
+        {
+            //赋值
+            this.uiParent.chooseUID = this.packageLocalData.uid;
+        }
     }
 }
