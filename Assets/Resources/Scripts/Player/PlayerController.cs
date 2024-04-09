@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 5;
     public float fallSpeed = -2;
     public float doubleJumpSpeed = 3;
-    public float attackSppeed = 2;//攻击时移动的补偿速度
+    public float dashSppeed = 7;//冲刺
     public int atk = 3;
 
     private Rigidbody2D myRigidBody;
@@ -120,22 +120,22 @@ public class PlayerController : MonoBehaviour
         myAni.SetBool("IsFall", isFall);
     }
 
-    public void Attack()
+    public void Attack()//改为dash
     {
         //点击交互按钮进行attack
         if (IsAttack == false)
         {
             IsAttack = true;
             myAni.SetTrigger("NormalAttack");
-            myRigidBody.velocity = new Vector2(transform.localPosition.x*attackSppeed, 0.0f);
+            myRigidBody.velocity = new Vector2(transform.localPosition.x*dashSppeed, 0.0f);
 
             if (transform.localRotation == Quaternion.Euler(0, 0, 0))//向右
             {
-                myRigidBody.velocity = new Vector2(attackSppeed, myRigidBody.velocity.y);
+                myRigidBody.velocity = new Vector2(dashSppeed, myRigidBody.velocity.y);
             }
             else if (transform.localRotation == Quaternion.Euler(0, -180, 0)|| transform.localRotation == Quaternion.Euler(0, 180, 0))//向左
             {
-                myRigidBody.velocity = new Vector2(-attackSppeed, myRigidBody.velocity.y);
+                myRigidBody.velocity = new Vector2(-dashSppeed, myRigidBody.velocity.y);
             }
         }
         
